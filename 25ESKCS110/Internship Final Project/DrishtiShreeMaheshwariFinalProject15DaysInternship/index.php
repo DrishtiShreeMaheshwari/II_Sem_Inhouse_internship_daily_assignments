@@ -5,9 +5,6 @@
     <title>SPACE PHOTO EXPLORER</title>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
 <style>
-/* --- GRAPHITE INDIGO & ULTRA GLOW SPACE THEME --- */
-
-/* Simple, Clean Reset */
 body {
     background-color: #0d0f1d; /* Deep Cosmic Void */
     color: #ffffff;
@@ -16,8 +13,6 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
-
-/* HEADER: Deep Galaxy Banner */
 header {
     background: linear-gradient(135deg, #141628 0%, #1a103c 100%); 
     padding: 25px 20px;
@@ -26,8 +21,6 @@ header {
     position: relative;
     z-index: 10;
 }
-
-/* Simple Student-Level Logo */
 .logo-container {
     display: flex;
     align-items: center;
@@ -55,12 +48,10 @@ header h1 {
 header p {
     margin: 5px 0 0 0;
     font-size: 14px;
-    color: #00d2ff; /* Electric Cyan */
+    color: #00d2ff;
     font-weight: 500;
     letter-spacing: 0.5px;
 }
-
-/* Developer Name Tag Styling */
 .dev-badge {
     font-size: 11px;
     color: #ffffff; 
@@ -74,15 +65,11 @@ header p {
     border: none;
     box-shadow: 0 2px 10px rgba(0, 210, 255, 0.2);
 }
-
-/* MAIN APP LAYOUT: Sidebar + Content Frame */
 .app-container {
     display: flex;
     position: relative;
     min-height: calc(100vh - 140px);
 }
-
-/* THREE LINES HAMBURGER BUTTON */
 .menu-toggle-btn {
     position: absolute;
     top: 20px;
@@ -103,11 +90,9 @@ header p {
     color: #0d0f1d;
     box-shadow: 0 0 10px rgba(0, 210, 255, 0.4);
 }
-
-/* DYNAMIC SIDE PANEL NAVIGATION */
 .sidebar {
     width: 240px;
-    background-color: #141628; /* Midnight Graphite Blue */
+    background-color: #141628; 
     border-right: 1px solid rgba(0, 210, 255, 0.25);
     padding: 70px 20px 20px 20px; 
     display: flex;
@@ -118,16 +103,12 @@ header p {
     box-sizing: border-box;
     overflow: hidden; 
 }
-
-/* Collapsed Sidebar State */
 .sidebar.collapsed {
     transform: translateX(-100%);
     width: 0;
     padding: 70px 0 20px 0;
     border-right: none;
 }
-
-/* TAB BUTTONS (Unselected State) */
 .tab-btn {
     padding: 12px 15px;
     font-family: 'Rajdhani', sans-serif;
@@ -147,30 +128,23 @@ header p {
     border-color: #00d2ff;
     color: #ffffff;
 }
-/* Selected Active Tab Button - Matches Favorite Theme Gradient */
 .tab-btn.active {
     background: linear-gradient(90deg, #7928ca, #1a103c); 
     border: 1px solid #00d2ff;
     color: #ffffff; 
     box-shadow: 0 0 10px rgba(121, 40, 202, 0.3);
 }
-
-/* MAIN CONTENT SECTION */
 .content {
     flex: 1;
     padding: 30px;
     margin-left: 0;
     transition: margin-left 0.3s ease;
 }
-
-/* CLEAN WELCOME CONTENT (No Card Frame) */
 .welcome-section {
     max-width: 650px;
     margin: 40px auto 20px auto;
     text-align: left;
 }
-
-/* MINIMALIST CONTAINERS (For Features / Search Fields) */
 .box {
     background-color: #141628; 
     padding: 25px;
@@ -181,7 +155,6 @@ header p {
     text-align: left; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
-/* SEARCH & INPUT GROUPS */
 .search-group {
     display: flex;
     gap: 10px;
@@ -202,7 +175,7 @@ input[type="text"] {
     font-family: 'Rajdhani', sans-serif;
     font-size: 16px;
     font-weight: 700;
-    background: linear-gradient(45deg, #00d2ff, #00a8ff); /* Cyan Accent Action Button */
+    background: linear-gradient(45deg, #00d2ff, #00a8ff); 
     color: #0d0f1d;
     border: none;
     border-radius: 4px;
@@ -214,22 +187,18 @@ input[type="text"] {
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(0, 210, 255, 0.4);
 }
-
-/* PROFILE BADGE STYLING INSIDE HOME CARD */
 .profile-display-card {
     border-left: 4px solid #7928ca;
     padding-left: 12px;
     margin-bottom: 15px;
 }
-
-/* REDIRECT FEATURE BUTTONS (NASA Links & Mars Landsite) */
 .nasa-redirect-btn {
     display: block;
     text-align: center;
     font-family: 'Rajdhani', sans-serif;
     font-size: 15px;
     font-weight: 700;
-    background: linear-gradient(45deg, #7928ca, #1a103c); /* Unified Purple Gradient */
+    background: linear-gradient(45deg, #7928ca, #1a103c); 
     color: #ffffff;
     border: 1px solid rgba(0, 210, 255, 0.4);
     padding: 14px;
@@ -244,11 +213,9 @@ input[type="text"] {
     border-color: #00d2ff;
     box-shadow: 0 4px 12px rgba(121, 40, 202, 0.4);
 }
-
-/* HEADINGS & TEXT */
 h2 { 
     font-family: 'Rajdhani', sans-serif;
-    color: #00d2ff; /* Electric Cyan Title */
+    color: #00d2ff; 
     font-size: 28px; 
     margin-top: 0;
     letter-spacing: 0.5px;
@@ -282,8 +249,6 @@ li {
     transform: scale(1.01); 
     cursor: pointer;
 }
-
-/* Interactive Link styling for Titles */
 .space-link {
     text-decoration: none;
     color: #00d2ff; 
@@ -293,8 +258,6 @@ li {
     color: #63dfff;
     text-decoration: underline;
 }
-
-/* RESULTS GRID */
 .search-results-grid {
     display: flex;
     flex-wrap: wrap;
@@ -339,11 +302,9 @@ li {
 .result-card .space-link:hover {
     color: #00d2ff;
 }
-
-/* Stylized Date Display Label */
 .result-date {
     font-size: 12px;
-    color: #90cdf4; /* Clean soft blue highlight for dates */
+    color: #90cdf4; 
     font-weight: bold;
     margin-top: 8px;
     margin-bottom: 2px;
@@ -355,8 +316,6 @@ li {
     margin: 5px 0 10px 0;
     line-height: 1.4;
 }
-
-/* SAVE BUTTON (Dynamic Search Cards) */
 .save-btn {
     font-family: 'Rajdhani', sans-serif;
     background: linear-gradient(45deg, #7928ca, #1a103c); 
@@ -377,8 +336,6 @@ li {
     border-color: #00d2ff;
     box-shadow: 0 4px 12px rgba(121, 40, 202, 0.4);
 }
-
-/* PERMANENT GUIDELINE SUBTEXT BELOW SAVE BUTTONS */
 .save-guideline-text {
     font-size: 11px;
     color: #a3aab4;
@@ -387,8 +344,6 @@ li {
     display: block;
     letter-spacing: 0.3px;
 }
-
-/* --- MODAL DETAILED COSMIC OVERLAY STYLING --- */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -446,8 +401,6 @@ li {
     padding: 25px;
     text-align: left;
 }
-
-/* FOOTER */
 footer {
     background-color: #141628;
     padding: 20px;
@@ -456,7 +409,6 @@ footer {
     text-align: center;
     border-top: 1px solid rgba(0, 210, 255, 0.15);
 }
-/* Cinematic Fade-In for Active Content */
 .tab-content-section, #apod-tab, #search-tab {
     animation: fadeIn 0.4s ease-in-out;
 }
@@ -468,7 +420,6 @@ footer {
 </style>
 </head>
 <body>
-<!-- SESSION IDENTITY PROMPT -->
 <script>
     let currentSessionUser = localStorage.getItem("space_explorer_user");
     if (!currentSessionUser || currentSessionUser.trim() === "") {
@@ -477,7 +428,6 @@ footer {
         localStorage.setItem("space_explorer_user", currentSessionUser);
     }
 </script>
-    <!-- WEBSITE HEADER -->
     <header>
         <div class="logo-container">
             <div class="cosmic-logo"></div>
@@ -486,35 +436,24 @@ footer {
         <p>Powered by NASA Open API</p>
         <div class="dev-badge">Developed by Drishti Shree Maheshwari</div>
     </header>
-
-    <!-- WRAPPER FOR LEFT PANEL + FRAME -->
     <div class="app-container">
-        
-        <!-- THREE LINES TOGGLE BUTTON -->
-        <button class="menu-toggle-btn" onclick="toggleSidebar()">&#9776;</button>
-
-        <!-- SIDE NAVIGATION PANEL -->
+                <button class="menu-toggle-btn" onclick="toggleSidebar()">&#9776;</button>
         <div class="sidebar" id="appSidebar">
             <button class="tab-btn active" id="btn-welcome" onclick="switchTab('welcome')">🏠 Home</button>
             <button class="tab-btn" id="btn-apod" onclick="switchTab('apod')">🌌 Photo of the Day</button>
             <button class="tab-btn" id="btn-search" onclick="switchTab('search')">🔍 Search Space Objects</button>
             <button class="tab-btn" id="btn-favorites" onclick="switchTab('favorites')">⭐ Stored Collection</button>
         </div>
-
-        <!-- MAIN BODY DISPLAY CONTENT -->
         <div class="content">
-            <!-- TAB 4: PERSONAL RETRIEVED FAVORITES VIEW -->
             <div id="favorites-tab" style="display:none; max-width: 1000px; margin: 0 auto;">
                 <div style="text-align: center; margin-bottom: 20px;">
                     <h2>Your Saved Interstellar Collection</h2>
                     <p>Displaying cosmic records synced under account profile name: <strong class="sync-profile-name" style="color: #00d2ff;"></strong></p>
                 </div>
                 <div class="search-results-grid" id="favorites-box">
-                    <!-- Fetched assets append programmatically here -->
                 </div>
             </div>
 
-            <!-- Home Content Tab View -->
             <div id="welcome-tab" class="tab-content-section">
                 <!-- Clean, Boxless Welcome Introduction -->
                 <div class="welcome-section">
@@ -527,7 +466,6 @@ footer {
                     </ul>
                 </div>
 
-                <!-- PROFILE NAME MODIFIER COMPONENT IN HOME TAB -->
                 <div class="box">
                     <h2>Explorer Profile Settings</h2>
                     <div class="profile-display-card">
@@ -539,19 +477,14 @@ footer {
                         <button class="search-btn" onclick="updateProfileName()">Update Name</button>
                     </div>
                 </div>
-
-                <!-- Separate standalone feature box below -->
                 <div class="box">
                     <a href="https://science.nasa.gov/specials/your-name-in-landsat/" class="nasa-redirect-btn">
                         🌏 Spell Your Name with Satellite Images (Official NASA Feature)
                     </a>
                 </div>
             </div>
-
-            <!-- TAB 2: NASA PHOTO OF THE DAY SECTION -->
             <div id="apod-tab" class="box" style="display:none; text-align: center;">
                 <h2>NASA Photo of the Day</h2>
-                
                 <a id="apod-link" href="" class="space-link">
                     <h3 id="apod-title">Loading today's photo...</h3>
                     <img id="apod-img" src="" alt="APOD Image">
@@ -571,7 +504,6 @@ footer {
                 </form>   
            </div>
 
-            <!-- TAB 3: SEARCH BAR & RESULTS SECTION -->
             <div id="search-tab" style="display:none; max-width: 1000px; margin: 0 auto;">
                 <div class="box" style="max-width: 600px;">
                     <h2>Search Space Objects</h2>
@@ -597,7 +529,6 @@ footer {
         </div>
     </div>
 
-    <!-- DYNAMIC INTERACTIVE COSMIC DETAIL MODAL -->
     <div id="cosmicModal" class="modal-overlay" style="display:none;" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
             <span class="close-modal-btn" onclick="closeModal()">&larr; Back to Collection</span>
@@ -612,42 +543,34 @@ footer {
         </div>
     </div>
 
-    <!-- FOOTER -->
     <footer>
         &copy; 2026 Space Photo Explorer Project. All Rights Reserved.
     </footer>
 
     <script>
-        // Memory cache pipeline for storing array outputs safely locally
         let favoritesCache = [];
 
-        // --- SIDEBAR SLIDING TOGGLE LOGIC ---
         function toggleSidebar() {
             const sidebar = document.getElementById('appSidebar');
             sidebar.classList.toggle('collapsed');
         }
 
-        // --- INITIAL UI SYNC RUN ---
         function syncProfileUIElements() {
             const currentName = localStorage.getItem("space_explorer_user") || "Anonymous_Explorer";
             
-            // Sync text display values across tabs
             document.getElementById("home-profile-display").innerText = currentName;
             
             const syncBadges = document.querySelectorAll(".sync-profile-name");
             syncBadges.forEach(badge => badge.innerText = currentName);
 
-            // Keep hidden data inputs up-to-date for form uploads
             const apodUserField = document.getElementById("form-apod-user");
             if (apodUserField) apodUserField.value = currentName;
         }
         
-        // Initial setup execution
         window.addEventListener('DOMContentLoaded', () => {
             syncProfileUIElements();
         });
 
-        // --- CHANGE USER PROFILE LOGIC ---
         function updateProfileName() {
             const nameInput = document.getElementById("change-profile-input");
             const newName = nameInput.value.trim();
@@ -663,7 +586,6 @@ footer {
             alert(`Profile name successfully updated to "${newName}"!`);
         }
 
-        // --- TAB SWITCHING WITH AUTO-REFRESH LOGIC ---
         function switchTab(tabName) {
             document.getElementById('welcome-tab').style.display = 'none';
             document.getElementById('apod-tab').style.display = 'none';
@@ -693,7 +615,6 @@ footer {
             }
         }
 
-        // --- FETCH PERSONAL ARCHIVES FROM PHP DB ---
         function loadUserFavorites() {
             const user = localStorage.getItem("space_explorer_user") || "Anonymous_Explorer";
             syncProfileUIElements();
@@ -731,7 +652,6 @@ footer {
                 });
         }
 
-        // --- COSMIC MODAL INTERACTION LOGIC ---
         function openModal(index) {
             const item = favoritesCache[index];
             if (!item) return;
@@ -753,7 +673,6 @@ document.getElementById("modal-nasa-link").href = "https://images.nasa.gov/detai
             document.getElementById("cosmicModal").style.display = "none";
         }
 
-        // --- HELPER FUNCTION TO FORMAT NASA DATE ---
         function formatNasaDate(rawDateStr) {
             if (!rawDateStr) return "Date Created: N/A";
             
@@ -774,7 +693,6 @@ document.getElementById("modal-nasa-link").href = "https://images.nasa.gov/detai
             return `Date Created: ${day}${suffix} ${monthName} ${year}`;
         }
 
-        // --- GET TODAY'S APOD PHOTO AUTOMATICALLY ---
         const apodUrl = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
 
         fetch(apodUrl)
@@ -801,7 +719,6 @@ document.getElementById("modal-nasa-link").href = "https://images.nasa.gov/detai
                 console.log(err);
             });
 
-        // --- SEARCH FUNCTION FOR SPACE ITEMS ---
         function searchSpace() {
             var userQuery = document.getElementById("search-term").value;
             if(userQuery == "") {
@@ -840,7 +757,6 @@ document.getElementById("modal-nasa-link").href = "https://images.nasa.gov/detai
     var rawDesc = items[i].data[0].description || "No metadata description recorded.";
     var shortDesc = rawDesc.length > 100 ? rawDesc.substring(0, 100) + "..." : rawDesc;
 
-    // Clean strings safely to protect hidden input tags from collapsing due to quotes
     var safeTitle = title.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
     var safeDesc = rawDesc.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
